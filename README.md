@@ -20,6 +20,8 @@ To install the server packages, run
 npm install
 ```
 
+## Client packages
+
 After, to install the client packages, run
 
 ```
