@@ -8,6 +8,41 @@ The MERN stack is a collection of software that are used together to create a fu
 * **R**eact
 * **N**ode.js
 
+# Installing packages
+
+**NOTE: Make sure you follow this step if this your first time running the project after installing it**
+
+## Server packages
+
+To install the server packages, run
+
+```
+npm install
+```
+
+After, to install the client packages, run
+
+```
+npm run client-install
+```
+
+# Run Scripts
+
+To run both the **server and client** script concurrently, use
+```
+npm run dev
+```
+
+In the case you want to only run the **server** use
+```
+npm run server
+```
+
+Likewise, to run the **client** only use
+```
+npm run client
+```
+
 # Setup
 
 ## Backend
