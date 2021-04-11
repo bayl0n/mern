@@ -85,5 +85,6 @@ This is the script that will be run in production. However, since we want to uti
     "start": "node server.js",
     "server": "nodemon server.js"
 },
+```
 
 Now we can create our `server.js` file
