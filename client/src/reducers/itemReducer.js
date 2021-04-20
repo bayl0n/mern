@@ -1,4 +1,3 @@
-import uuid from 'uuid';
 import { GET_ITEMS, ADD_ITEM, DELETE_ITEM, ITEMS_LOADING } from '../actions/types';
 
 // Where the state goes and checks actions
@@ -8,7 +7,7 @@ const initialState = {
     loading: false
 };
 
-export default function(state = initialState, action) {
+export default function ItemReducer(state = initialState, action) {
     switch(action.type) {
         case GET_ITEMS:
             return  {
