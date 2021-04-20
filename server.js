@@ -15,19 +15,19 @@ const db = require('./config/keys').mongoURI;
 
 // Connect to Mongo
 mongoose
-    .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => console.log('MongoDB Connected...'))
-    .catch(err => console.log(err));
+.connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
+.then(() => console.log('MongoDB Connected...'))
+.catch(err => console.log(err));
 
 // Use Routes
 app.use('/api/items', items);
 
 // Serve static assets if we are in production
-if(process.env.NODE_ENV == 'production') {
-    // Set a static folder
-    app.use('/static', express.static(path.join(__dirname, 'client/build')));
+if(process.env.NODE_ENV === 'production') {
+    // set static folder
+    app.use(express.static('frontend/build'));
     app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+        res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
     });
 }
 
