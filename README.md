@@ -1,4 +1,4 @@
-# MERN Todo
+# ShoppingList
 A project used to learn the MERN stack
 
 # What is the MERN stack?
